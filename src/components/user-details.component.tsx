@@ -17,7 +17,7 @@ export const UserDetails = () => {
   };
 
   const API =
-    "http://a64c892dba98d4cb9963dc50e3d7ed07-161434970.ap-south-1.elb.amazonaws.com/candidates";
+    "http://a64c892dba98d4cb9963dc50e3d7ed07-161434970.ap-south-1.elb.amazonaws.com/candidates/";
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
@@ -25,7 +25,6 @@ export const UserDetails = () => {
     if (firstName && lastName && email && linkedin && github) {
       axios
         .post(API, profile)
-        .then((response) => console.log(response))
         .catch((error) => {
           alert(
             "Unfortunately we were not able to submit your details please try again" +
