@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div className ="container">
+      <div className ="title">Registration</div>
+      <div className ="content">
+        <form action="#">
+          <div className ="user-details">
+            <div className ="input-box">
+              <span className ="details">First Name</span>
+              <input type="text" placeholder="Enter your first name" required />
+            </div>
+            <div className ="input-box">
+              <span className ="details">Last Name</span>
+              <input type="text" placeholder="Enter your Last Name" required />
+            </div>
+            <div className ="input-box">
+              <span className ="details">Email</span>
+              <input type="email" placeholder="Enter your email" required />
+            </div>
+            <div className ="input-box">
+              <span className ="details">Phone Number</span>
+              <input type="tel" maxlength="10" minlength="10" placeholder="Enter your number" required />
+            </div>
+            <div className ="input-box">
+                <span className ="details">Upload Image</span>
+                <input type="file" className ="image" accept="image/*" placeholder="Enter your number" required />
+              </div>
+          </div>
+          <div className ="button">
+            <input type="submit" value="Register" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
